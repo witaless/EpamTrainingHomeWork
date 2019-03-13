@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
     tools:context=".VKPageActivity">
@@ -52,6 +51,7 @@
         </LinearLayout>
     </ScrollView>
 
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/activity_vkpage_toolbar"
         android:layout_width="match_parent"
@@ -59,28 +59,22 @@
         android:layout_alignParentTop="true"
         android:background="@android:color/transparent"
         android:minHeight="?attr/actionBarSize"
-        android:theme="@style/ToolbarColoredBackArrow" />
+        android:theme="@style/ToolbarWhiteColoredBackArrow" />
 
-
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/activity_vkpage_bottom_navigation_view"
-            android:layout_alignParentBottom="true"
-
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layoutMode="opticalBounds"
-            app:itemBackground="@android:color/white"
-            app:itemIconTint="@color/vkpage_bottom_navigation_item_colors"
-            app:itemTextColor="@color/vkpage_bottom_navigation_item_colors"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/vkpage_menu_bottom_navigation" />
-
-    <!-- hardcode? -->
-    <View
-        android:id="@+id/fadeLine"
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/activity_vkpage_bottom_navigation_view"
         android:layout_width="match_parent"
-        android:layout_height="3dp"
-        android:layout_above="@id/activity_vkpage_bottom_navigation_view"
-        android:background="@drawable/fade_line" />
+
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:layoutMode="opticalBounds"
+        app:elevation="4dp"
+        app:itemIconTint="@color/vkpage_bottom_navigation_item_colors"
+        app:itemTextColor="@color/vkpage_bottom_navigation_item_colors"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/vkpage_menu_bottom_navigation" />
+
+
 
 </RelativeLayout>

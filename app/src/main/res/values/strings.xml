@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">EpamTrainingHomeWork</string>
+    <string name="podcasts_grid_label_new">New</string>
+    <string name="podcast_for_you_header">For you</string>
+    <string name="podcast_for_you_tab_1_title">New episodes</string>
+    <string name="podcast_for_you_tab_2_title">In progress</string>
+    <string name="podcast_for_you_tab_3_title">Downloads</string>
+    <string name="podcast_for_you_allnew_text">All new episodes</string>
+    <string name="podcast_for_you_podcast1_title">Выпуск 89. Android in a car (Android Auto, Yandex Auto)</string>
+    <string name="podcast_for_you_podcast1_subtitle">2 days ago • 67 min</string>
+    <string name="podcast_for_you_podcast2_title">165: Developer Growth: Start Writing</string>
+    <string name="podcast_for_you_podcast2_subtitle">2 days ago • 19 min</string>
+    <string name="podcast_for_you_podcast3_title">Podlodka #101 - Базыданных</string>
+    <string name="podcast_for_you_podcast3_subtitle">3 days ago • 155 min</string>
+    <string name="vkpage_new_post_text">What\'s new?</string>
+    <string name="vkpage_photo_gallery_textview_title">Photos</string>
+    <string name="vkpage_photo_gallery_photo_count">44</string>
+    <string name="vkpage_profile_info_name">Sofia Dog</string>
+    <string name="vkpage_profile_info_isonline">online</string>
+    <string name="kpage_profile_info_button_edit_text">Edit</string>
+    <string name="vkpage_profile_info_status">Hi Pedigree, Hi Royal Canin, Hi Brit Care</string>
+    <string name="vkpage_profile_info_more_info_text">Show info</string>
+    <string name="vkpage_profile_info_friends">133 friends</string>
+    <string name="vkpage_profile_info_city">Lives in Belarus</string>
 </resources>

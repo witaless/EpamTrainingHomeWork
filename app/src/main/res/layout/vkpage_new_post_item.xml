@@ -14,7 +14,7 @@
         android:id="@+id/vkpage_new_post_avatar_round"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         app:srcCompat="@drawable/vk_page_avatar_round_small" />
 
     <TextView
@@ -22,21 +22,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/vkpage_new_post_avatar_round"
-        android:text="What's new?" />
+        android:layout_toEndOf="@+id/vkpage_new_post_avatar_round"
+        android:text="@string/vkpage_new_post_text" />
 
     <ImageView
         android:id="@+id/vkpage_new_post_new_photo"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_marginRight="15dp"
-        android:layout_toLeftOf="@+id/vkpage_new_post_circle"
+        android:layout_marginEnd="15dp"
+        android:layout_toStartOf="@+id/vkpage_new_post_circle"
         app:srcCompat="@drawable/ic_photo_camera" />
 
     <ImageView
         android:id="@+id/vkpage_new_post_circle"
         android:layout_width="24dp"
         android:layout_height="24dp"
-        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         app:srcCompat="@drawable/ic_round_recursion" />
 </RelativeLayout>

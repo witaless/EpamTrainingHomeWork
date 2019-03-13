@@ -32,7 +32,7 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/vkpage_profile_info_image_avatar"
+            android:layout_alignStart="@+id/vkpage_profile_info_image_avatar"
             android:layout_alignBottom="@+id/vkpage_profile_info_image_avatar"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
@@ -43,7 +43,7 @@
                 android:id="@+id/vkpage_profile_info_textview_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sofia Dog"
+                android:text="@string/vkpage_profile_info_name"
                 android:textColor="@android:color/white"
                 android:textSize="24sp" />
 
@@ -57,7 +57,7 @@
                     android:id="@+id/vkpage_profile_info_textview_isonline"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="online"
+                    android:text="@string/vkpage_profile_info_isonline"
                     android:textColor="@color/colorGrey" />
 
                 <ImageView
@@ -80,7 +80,7 @@
         android:layout_marginEnd="15dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/button_vkpage_edit_profile"
-        android:text="Edit"
+        android:text="@string/kpage_profile_info_button_edit_text"
         android:textAllCaps="false"
         android:textColor="@color/colorLink"
         android:textSize="12sp" />
@@ -108,7 +108,7 @@
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/vkpage_profile_info_image_status"
             android:maxLines="1"
-            android:text="Hi Pedigree, Hi Royal Canin, Hi Brit Care"
+            android:text="@string/vkpage_profile_info_status"
             android:textSize="14sp" />
     </RelativeLayout>
 
@@ -133,21 +133,21 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/vkpage_profile_info_image_friends"
-            android:text="133 friends"
+            android:text="@string/vkpage_profile_info_friends"
             android:textSize="14sp" />
 
         <ImageView
             android:id="@+id/vkpage_profile_info_image_friend_1"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_toLeftOf="@+id/vkpage_profile_info_image_friend_2"
+            android:layout_toStartOf="@+id/vkpage_profile_info_image_friend_2"
             app:srcCompat="@drawable/vk_page_image_friend_1" />
 
         <ImageView
             android:id="@+id/vkpage_profile_info_image_friend_2"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            android:layout_toLeftOf="@+id/vkpage_profile_info_image_friend_3"
+            android:layout_toStartOf="@+id/vkpage_profile_info_image_friend_3"
             app:srcCompat="@drawable/vk_page_image_friend_2" />
 
         <ImageView
@@ -182,7 +182,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/vkpage_profile_info_image_city"
-            android:text="Lives in Belarus"
+            android:text="@string/vkpage_profile_info_city"
             android:textSize="14sp" />
     </RelativeLayout>
 
@@ -209,7 +209,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toEndOf="@+id/vkpage_profile_info_image_more_info"
-            android:text="Show info"
+            android:text="@string/vkpage_profile_info_more_info_text"
             android:textColor="@color/colorLink"
             android:textSize="14sp" />
     </RelativeLayout>

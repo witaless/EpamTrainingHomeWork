@@ -6,11 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".GooglePodcastsActivity">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/google_podcasts_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/google_podcasts_grid_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="2dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp">
+
+                <include layout="@layout/google_podcasts_for_you_item" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/google_podcasts_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
         android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme" />
+        android:theme="@style/ToolbarGreyColoredBackArrow">
+
+        <ImageView
+            android:id="@+id/google_podcasts_toolbar_logo"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginEnd="18dp"
+            app:srcCompat="@drawable/logo_google_podcasts" />
+    </android.support.v7.widget.Toolbar>
 </RelativeLayout>
