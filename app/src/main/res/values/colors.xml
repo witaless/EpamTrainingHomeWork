@@ -11,5 +11,6 @@
     <color name="colorBottomNavigationItemsColor">#99A2AD</color>
     <color name="colorGooglePodcastsToolbarIcon">#5e6367</color>
     <color name="colorGooglePodcastsAccent">#4285F4</color>
+    <color name="colorGooglePodcastsDivider">#DBDBDB</color>
 
 </resources>
