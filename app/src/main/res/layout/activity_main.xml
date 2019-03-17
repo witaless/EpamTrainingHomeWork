@@ -12,20 +12,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:text="Start fragment activity"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3"
-        app:layout_constraintStart_toStartOf="@+id/button3" />
+        android:text="@string/main_activity_start_fragment_button_text"
+        app:layout_constraintBottom_toTopOf="@+id/start_service_broadcast_example_activity"
+        app:layout_constraintEnd_toEndOf="@+id/start_service_broadcast_example_activity"
+        app:layout_constraintStart_toStartOf="@+id/start_service_broadcast_example_activity" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/start_service_broadcast_example_activity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Button"
+        android:text="@string/main_activity_start_service_broadcast_example_button_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

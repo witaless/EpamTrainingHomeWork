@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">EpamTrainingHomeWork</string>
+    <string name="service_broadcast_example_start_time_text">Start time will be here</string>
+    <string name="service_broadcast_example_finish_time_text">Finish time will be here</string>
+    <string name="service_broadcast_example_start_service_button_text">Start Service</string>
+    <string name="restore_state_fragment_welcome_textview_text">Welcome!</string>
+    <string name="restore_state_fragment_user_name_edittext_hint">Enter your name</string>
+    <string name="main_activity_start_fragment_button_text">Start fragment activity</string>
+    <string name="main_activity_start_service_broadcast_example_button_text">Start service broadcast example</string>
 </resources>

@@ -19,6 +19,12 @@ public class MainActivity extends AppCompatActivity {
                 openActivity(RestoreStateActivity.class);
             }
         });
+        findViewById(R.id.start_service_broadcast_example_activity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity(ServiceBroadcastExampleActivity.class);
+            }
+        });
     }
 
     private void openActivity(Class<? extends Activity> activityClass) {
