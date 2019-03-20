@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BBDEFB"
-    tools:context=".InboxFragment" >
+    android:background="@color/fragment_inbox_background"
+    tools:context=".fragments.InboxFragment">
 
     <ImageView
         android:id="@+id/imbox_imageView"
@@ -13,4 +13,5 @@
         android:layout_height="100dp"
         android:layout_centerInParent="true"
         app:srcCompat="@drawable/ic_inbox" />
+
 </RelativeLayout>

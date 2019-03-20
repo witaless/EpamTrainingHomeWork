@@ -21,8 +21,9 @@
         tools:text="User Name" />
 
     <TextView
-        android:id="@+id/user_emal"
+        android:id="@+id/user_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:text="username@un.co" />
+
 </merge>

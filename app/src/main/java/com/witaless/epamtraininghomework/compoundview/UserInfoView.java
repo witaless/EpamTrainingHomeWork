@@ -1,4 +1,4 @@
-package com.witaless.epamtraininghomework;
+package com.witaless.epamtraininghomework.compoundview;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -13,15 +13,18 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.witaless.epamtraininghomework.R;
+
 import java.util.Random;
 
 public class UserInfoView extends LinearLayout {
 
-    private final int MAX_COLOR_CHANNEL = 256;
+    private static final int MAX_COLOR_CHANNEL = 256;
 
     private ImageView userIconImageView;
     private TextView userNameTextView;
     private TextView userEmailTextView;
+
     private  UserInfoModel userInfo = null;
 
     public UserInfoView(Context context) {
@@ -56,9 +59,10 @@ public class UserInfoView extends LinearLayout {
         super.onFinishInflate();
 
         setOrientation(VERTICAL);
+
         userIconImageView = findViewById(R.id.user_icon);
         userNameTextView = findViewById(R.id.user_name);
-        userEmailTextView = findViewById(R.id.user_emal);
+        userEmailTextView = findViewById(R.id.user_email);
 
         userIconImageView.setOnClickListener(new OnClickListener() {
             @Override
@@ -72,7 +76,7 @@ public class UserInfoView extends LinearLayout {
         });
     }
 
-    public void setUserInfo(UserInfoModel userInfo){
+    public void setUserInfo(final UserInfoModel userInfo){
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
             userIconImageView.setImageDrawable(ContextCompat.getDrawable(getContext(), userInfo.getIcon()));
         } else{

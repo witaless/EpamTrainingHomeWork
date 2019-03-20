@@ -1,4 +1,4 @@
-package com.witaless.epamtraininghomework;
+package com.witaless.epamtraininghomework.compoundview;
 
 import android.support.annotation.DrawableRes;
 
