@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EpamTrainingHomeWork</string>
+
+    <string name="nav_inbox_title">Inbox</string>
+    <string name="nav_outbox_title">Outbox</string>
+    <string name="nav_favorites_title">Favorites</string>
+    <string name="nav_trash_title">Trash</string>
 </resources>
