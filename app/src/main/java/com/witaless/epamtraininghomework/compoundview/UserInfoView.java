@@ -6,6 +6,7 @@ import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.graphics.drawable.VectorDrawableCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.content.res.AppCompatResources;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,14 +26,14 @@ public class UserInfoView extends LinearLayout {
     private TextView userNameTextView;
     private TextView userEmailTextView;
 
-    private  UserInfoModel userInfo = null;
+    private UserInfoModel userInfo = null;
 
     public UserInfoView(Context context) {
         super(context);
         initializeViews(context);
     }
 
-    public UserInfoView(Context context,  AttributeSet attrs) {
+    public UserInfoView(Context context, AttributeSet attrs) {
         super(context, attrs);
         initializeViews(context);
     }
@@ -67,27 +68,23 @@ public class UserInfoView extends LinearLayout {
         userIconImageView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Random random= new Random();
+                Random random = new Random();
                 int randomRed = random.nextInt(MAX_COLOR_CHANNEL);
                 int randomGreen = random.nextInt(MAX_COLOR_CHANNEL);
                 int randomBlue = random.nextInt(MAX_COLOR_CHANNEL);
-                userIconImageView.setColorFilter(Color.rgb(randomRed,randomGreen,randomBlue));
+                userIconImageView.setColorFilter(Color.rgb(randomRed, randomGreen, randomBlue));
             }
         });
     }
 
-    public void setUserInfo(final UserInfoModel userInfo){
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP){
-            userIconImageView.setImageDrawable(ContextCompat.getDrawable(getContext(), userInfo.getIcon()));
-        } else{
-            userIconImageView.setImageDrawable(VectorDrawableCompat.create(getResources(),userInfo.getIcon(),null));
-        }
+    public void setUserInfo(final UserInfoModel userInfo) {
+        userIconImageView.setImageDrawable(AppCompatResources.getDrawable(getContext(), userInfo.getIcon()));
         userNameTextView.setText(userInfo.getName());
         userEmailTextView.setText(userInfo.getEmail());
         this.userInfo = userInfo;
     }
 
-    public UserInfoModel getUserInfo(){
+    public UserInfoModel getUserInfo() {
         return userInfo;
     }
 
