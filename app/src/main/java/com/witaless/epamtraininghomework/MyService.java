@@ -4,7 +4,6 @@ import android.app.Service;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.IBinder;
-import android.util.Log;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -12,9 +11,8 @@ import java.util.Locale;
 
 public class MyService extends Service {
 
-    private final String TAG = MyService.class.getSimpleName();
-    private final String DATE_FORMAT = "kk:mm:ss:SS";
-    private final long FINISH_DELAY = 3000;
+    private static final String DATE_FORMAT = "kk:mm:ss:SS";
+    private static final long FINISH_DELAY = 3000;
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -23,7 +21,6 @@ public class MyService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.d(TAG, "onStartCommand");
         sendTimeBroadcast(ServiceBroadcastExampleActivity.SERVICE_STATUS_CODE_START);
 
         new Handler().postDelayed(new Runnable() {
@@ -40,7 +37,6 @@ public class MyService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "onDestroy");
     }
 
     private void sendTimeBroadcast(String status) {

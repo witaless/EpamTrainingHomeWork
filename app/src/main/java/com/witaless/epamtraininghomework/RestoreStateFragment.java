@@ -12,8 +12,8 @@ import android.widget.TextView;
 
 public class RestoreStateFragment extends Fragment {
 
-    private final String TEXT_VIEW_USER_NAME_VALUE_KEY = "textViewUserNameValue";
-    private final String EDIT_TEXT_USER_NAME_VALUE_KEY = "editTextUserNameValue";
+    private static final String TEXT_VIEW_USER_NAME_VALUE_KEY = "textViewUserNameValue";
+    private static final String EDIT_TEXT_USER_NAME_VALUE_KEY = "editTextUserNameValue";
 
     private TextView userNameTextView;
     private EditText userNameEditView;
@@ -56,6 +56,10 @@ public class RestoreStateFragment extends Fragment {
             outState.putString(TEXT_VIEW_USER_NAME_VALUE_KEY, userNameTextView.getText().toString());
             outState.putString(EDIT_TEXT_USER_NAME_VALUE_KEY, userNameEditView.getText().toString());
         }
+    }
+
+    public static RestoreStateFragment newInstance() {
+        return new RestoreStateFragment();
     }
 
 }

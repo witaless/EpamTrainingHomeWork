@@ -15,7 +15,7 @@ public class RestoreStateActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         if (savedInstanceState == null) {
-            Fragment newFragment = new RestoreStateFragment();
+            Fragment newFragment = RestoreStateFragment.newInstance();
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.restore_state_container, newFragment);
             transaction.commit();

@@ -18,8 +18,8 @@ public class ServiceBroadcastExampleActivity extends AppCompatActivity {
     public static final String SERVICE_STATUS_CODE_START = "start";
     public static final String SERVICE_STATUS_CODE_FINISH = "finish";
     public static final String BROADCAST_ACTION = ServiceBroadcastExampleActivity.class.getSimpleName() + ".BROADCAST_ACTION";
-    private final String MESSAGE_SERVICE_STARTED = "Service Started";
-    private final String MESSAGE_SERVICE_FINISHED = "Service Finished Work";
+    private static final String MESSAGE_SERVICE_STARTED = "Service Started";
+    private static final String MESSAGE_SERVICE_FINISHED = "Service Finished Work";
 
     private TextView startTimeView;
     private TextView finishTimeView;
