@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#616161</color>
+    <color name="colorPrimaryDark">#3D3D3D</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorBackground">#EDECF1</color>
+    <color name="colorEditButtonBackground">#E5EBF1</color>
+    <color name="colorGrey">#D9ADB1B4</color>
+    <color name="colorLink">#28547c</color>
+    <color name="colorProfileInfoIcons">#AAAEB3</color>
+    <color name="colorBottomNavigationItemsColor">#99A2AD</color>
+    <color name="colorGooglePodcastsToolbarIcon">#5e6367</color>
+    <color name="colorGooglePodcastsAccent">#4285F4</color>
+    <color name="colorGooglePodcastsDivider">#DBDBDB</color>
+
 </resources>

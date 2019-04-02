@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_vkpage">
+
+    <RelativeLayout
+        android:id="@+id/vkpage_profile_info_layout_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/vk_page_avatar" />
+
+        <ImageButton
+            android:id="@+id/vkpage_profile_info_button_change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/vkpage_profile_info_image_avatar"
+            android:layout_alignBottom="@+id/vkpage_profile_info_image_avatar"
+            android:layout_margin="15dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_photo_camera" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/vkpage_profile_info_image_avatar"
+            android:layout_alignBottom="@+id/vkpage_profile_info_image_avatar"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/vkpage_profile_info_textview_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vkpage_profile_info_name"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vkpage_profile_info_textview_name"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vkpage_profile_info_textview_isonline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vkpage_profile_info_isonline"
+                    android:textColor="@color/colorGrey" />
+
+                <ImageView
+                    android:id="@+id/vkpage_profile_info_image_isonline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_mobile_online" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/vkpage_profile_info_button_edit"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_vkpage_edit_profile"
+        android:text="@string/kpage_profile_info_button_edit_text"
+        android:textAllCaps="false"
+        android:textColor="@color/colorLink"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/vkpage_profile_info_layout_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_chat_bubble" />
+
+        <TextView
+            android:id="@+id/vkpage_profile_info_textview_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/vkpage_profile_info_image_status"
+            android:maxLines="1"
+            android:text="@string/vkpage_profile_info_status"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vkpage_profile_info_layout_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/ic_friends" />
+
+        <TextView
+            android:id="@+id/vkpage_profile_info_textview_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/vkpage_profile_info_image_friends"
+            android:text="@string/vkpage_profile_info_friends"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_friend_1"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toStartOf="@+id/vkpage_profile_info_image_friend_2"
+            app:srcCompat="@drawable/vk_page_image_friend_1" />
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_friend_2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toStartOf="@+id/vkpage_profile_info_image_friend_3"
+            app:srcCompat="@drawable/vk_page_image_friend_2" />
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_friend_3"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            app:srcCompat="@drawable/vk_page_image_friend_3" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vkpage_profile_info_layout_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/ic_home_city" />
+
+        <TextView
+            android:id="@+id/vkpage_profile_info_textview_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/vkpage_profile_info_image_city"
+            android:text="@string/vkpage_profile_info_city"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vkpage_profile_info_layout_more_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/vkpage_profile_info_image_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@drawable/ic_more_info" />
+
+        <TextView
+            android:id="@+id/vkpage_profile_info_textview_more_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/vkpage_profile_info_image_more_info"
+            android:text="@string/vkpage_profile_info_more_info_text"
+            android:textColor="@color/colorLink"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>
